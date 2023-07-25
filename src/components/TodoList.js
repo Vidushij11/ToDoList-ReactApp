@@ -2,10 +2,10 @@ import React from 'react'
 
 function TodoList(props) {
   return (
-    <li className='list-item' style={{color:"red"}}>
+    <li className='list-item'>
         {props.item}
         <span className='icons' >
-        <i className="fa-solid fa-trash-can" onClick={e => {
+        <i className="fa-solid fa-trash-can icons-del"  onClick={e => {
             props.deleteItem(props.index)
         }}></i>
         </span>

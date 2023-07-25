@@ -14,7 +14,7 @@ function TodoInput(props) {
     }
   return (
     <div className='input-container'>
-        <input type='text' className='input-box-todo' placeholder='Enter your todo' onChange={handleChange} value={inputText} onKeyDown={handleChange}></input>
+        <input type='text' className='input-box-todo' placeholder='Enter Your Todo' onChange={handleChange} value={inputText} onKeyDown={handleChange}></input>
         <button className='add-button' onClick={()=>{
             props.addList(inputText)
             setInputText("")
