@@ -11,6 +11,11 @@ function App() {
     setListTodo([...listTodo,inputText]);
   }
   const deleteListItem = (key) =>{
+    if(key.keyCode === 46){
+      let newListTodo = [...listTodo];
+      newListTodo.splice(key,1);
+      setListTodo([...newListTodo])
+    }
       let newListTodo = [...listTodo];
       newListTodo.splice(key,1);
       setListTodo([...newListTodo])
