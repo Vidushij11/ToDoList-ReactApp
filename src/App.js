@@ -23,7 +23,7 @@ function App() {
           <hr/>
           {listTodo.map((listItem,i)=>{
             return (
-              <TodoList key = {i} item = {listItem} /> 
+              <TodoList key = {i} index = {i} item = {listItem} deleteItem = {deleteListItem} /> 
             )
           })}
       </div>
